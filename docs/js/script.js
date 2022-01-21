@@ -31,3 +31,14 @@ for (let i = 0; i < downBtn.length; i++) {
       serviceStatus[i].classList.toggle("__active");
    });
 }
+
+
+const swiper = new Swiper('.steps__slider', {
+   spaceBetween: 25,
+   slidesPerView: 'auto',
+   centerSlide: true,
+   navigation: {
+      nextEl: '.steps__step-button-next',
+      prevEl: '.steps__step-button-prev',
+   },
+});
