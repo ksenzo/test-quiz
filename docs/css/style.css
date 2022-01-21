@@ -110,6 +110,154 @@ input::-webkit-inner-spin-button {
 
 /*--------------------*/
 
+.banner {
+  position: relative;
+}
+
+.banner__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.banner__tilte {
+  font-family: "Montserrat";
+  font-weight: 900;
+  line-height: 125%;
+  z-index: 3;
+  margin-bottom: 20px;
+}
+
+.banner__subtitle {
+  font-family: "Montserrat";
+  line-height: 140%;
+  color: #000000;
+  max-width: 432px;
+  z-index: 3;
+  font-size: 16px;
+}
+
+.banner__btn {
+  padding: 23px 0 !important;
+  z-index: 3;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.banner__img-big {
+  position: absolute;
+  z-index: 2;
+}
+
+.banner__img-big img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__img-circle1 {
+  position: absolute;
+  z-index: 2;
+}
+
+.banner__img-circle1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__img-circle2 {
+  position: absolute;
+}
+
+.banner__img-circle2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__img-vawe1 {
+  position: absolute;
+  z-index: 2;
+}
+
+.banner__img-vawe1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__img-vawe2 {
+  position: absolute;
+  z-index: 0;
+}
+
+.banner__img-vawe2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__img-vawe3 {
+  position: absolute;
+  z-index: 0;
+  z-index: 2;
+}
+
+.banner__img-vawe3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__right-eliplse {
+  position: absolute;
+  background: #daecff;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.banner__img-bolt {
+  position: absolute;
+  z-index: 2;
+}
+
+.banner__img-bolt img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__img-circle3 {
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  left: 161px;
+  top: 210px;
+  z-index: 2;
+}
+
+.banner__img-circle3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__right-eliplse2 {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.banner__img-bolt2 {
+  position: absolute;
+  z-index: 2;
+}
+
+.banner__img-bolt2 img {
+  width: 100%;
+  height: 100%;
+}
+
 ._container {
   max-width: 1170px;
   margin: 0 auto;
@@ -125,6 +273,11 @@ body.__active {
   border-radius: 5px;
   text-align: center;
   padding: 10px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 100%;
+  color: #ffffff;
 }
 
 .header.__active {
@@ -213,9 +366,9 @@ body.__active {
           transform: rotate(45deg);
   width: 34px;
   border-radius: 12px;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .header__span.__active::before {
@@ -224,18 +377,18 @@ body.__active {
           transform: rotate(270deg);
   left: 0px;
   width: 34px;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   border-radius: 12px;
 }
 
 .header__span.__active::after {
   width: 0;
   height: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .header__span {
@@ -243,9 +396,9 @@ body.__active {
   height: 13px;
   background: #ffffff;
   border-radius: 50%;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .header__span::before {
@@ -257,9 +410,9 @@ body.__active {
   height: 13px;
   background: #ffffff;
   border-radius: 50%;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .header__span::after {
@@ -270,9 +423,9 @@ body.__active {
   width: 13px;
   height: 13px;
   background: #ffffff;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   border-radius: 50%;
 }
 
@@ -282,9 +435,11 @@ body.__active {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  opacity: 1;
 }
 
 .menu-mobile {
+  opacity: 0;
   background: #67aefc;
   position: fixed;
   right: 0;
@@ -332,6 +487,105 @@ body.__active {
 }
 
 @media (min-width: 320px) {
+  .banner__body {
+    padding-top: 386px;
+    width: 100%;
+  }
+
+  .banner__tilte {
+    font-size: 27px;
+    color: #000000;
+    max-width: 300px;
+  }
+
+  .banner__subtitle {
+    margin-bottom: 34px;
+  }
+
+  .banner__btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .banner__img-big {
+    width: 209px;
+    position: absolute;
+    -webkit-transform: rotate(1deg);
+        -ms-transform: rotate(1deg);
+            transform: rotate(1deg);
+    right: 83px;
+    top: 125px;
+  }
+
+  .banner__img-circle1 {
+    width: 24px;
+    height: 24px;
+    top: 220px;
+    right: 50px;
+  }
+
+  .banner__img-circle2 {
+    width: 26px;
+    height: 26px;
+    top: 324px;
+    right: 19px;
+    z-index: 0;
+  }
+
+  .banner__img-vawe1 {
+    width: 91px;
+    height: 33px;
+    right: 38px;
+    top: 155px;
+  }
+
+  .banner__img-vawe2 {
+    width: 78px;
+    height: 28px;
+    right: 243px;
+    top: 199px;
+  }
+
+  .banner__img-vawe3 {
+    width: 67px;
+    height: 26px;
+    right: 320px;
+    top: 284px;
+  }
+
+  .banner__right-eliplse {
+    width: 368px;
+    height: 253px;
+    top: 88px;
+    right: -184px;
+  }
+
+  .banner__img-bolt {
+    width: 66px;
+    height: 35px;
+    right: 59px;
+    top: 279px;
+  }
+
+  .banner__img-circle3 {
+    display: none;
+  }
+
+  .banner__right-eliplse2 {
+    border: 2px solid #75E169;
+    left: -51px;
+    top: 72px;
+    width: 102px;
+    height: 66px;
+  }
+
+  .banner__img-bolt2 {
+    width: 47px;
+    height: 22px;
+    right: 187px;
+    top: 100px;
+  }
+
   .header__body {
     padding: 5px 0;
   }
@@ -357,13 +611,128 @@ body.__active {
 }
 
 @media (min-width: 425px) {
+  .banner__body {
+    padding-top: 89px;
+    padding-bottom: 180px;
+    max-width: 323px;
+  }
+
+  .banner__btn {
+    width: 270px;
+    border-radius: 5px;
+  }
+
   .menu-mobile {
     max-width: 377px;
     width: 100%;
   }
 }
 
+@media (min-width: 768px) {
+  .banner__body {
+    padding-bottom: 180px;
+    max-width: 554px;
+  }
+
+  .banner__tilte {
+    font-size: 50px;
+    color: #484848;
+    max-width: unset;
+  }
+
+  .banner__subtitle {
+    margin-bottom: 58px;
+  }
+}
+
 @media (min-width: 1024px) {
+  .banner__body {
+    padding-top: 271px;
+    padding-bottom: 180px;
+  }
+
+  .banner__img-big {
+    -webkit-transform: rotate(350deg);
+        -ms-transform: rotate(350deg);
+            transform: rotate(350deg);
+    width: 509px;
+    right: 168px;
+    top: 278px;
+  }
+
+  .banner__img-circle1 {
+    width: 59px;
+    height: 59px;
+    right: 71px;
+    top: 555px;
+  }
+
+  .banner__img-circle2 {
+    width: 37px;
+    height: 37px;
+    right: 12px;
+    top: 522px;
+    z-index: 2;
+  }
+
+  .banner__img-vawe1 {
+    width: 222px;
+    height: 81px;
+    right: 41px;
+    top: 409px;
+  }
+
+  .banner__img-vawe2 {
+    width: 222px;
+    height: 81px;
+    right: 388px;
+    top: 543px;
+  }
+
+  .banner__img-vawe3 {
+    width: 171px;
+    height: 63px;
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+    left: 56px;
+    top: 721px;
+  }
+
+  .banner__right-eliplse {
+    width: 1200px;
+    top: 246px;
+    height: 548px;
+    right: -750px;
+  }
+
+  .banner__img-bolt {
+    width: 161px;
+    height: 83px;
+    top: 691px;
+    right: 93px;
+  }
+
+  .banner__img-circle3 {
+    display: block;
+  }
+
+  .banner__right-eliplse2 {
+    width: 300px;
+    height: 183px;
+    left: -163px;
+    border: 2px solid #67aefc;
+    bottom: 28px;
+    top: unset;
+  }
+
+  .banner__img-bolt2 {
+    width: 114px;
+    height: 57px;
+    right: 365px;
+    top: 200px;
+  }
+
   .header__body {
     padding: 18px 0;
   }
@@ -402,6 +771,14 @@ body.__active {
 }
 
  @media (min-width: 425px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 768px){
 
 @supports (-webkit-appearance:none){
 
