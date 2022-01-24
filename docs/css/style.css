@@ -481,7 +481,6 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 25px;
 }
 
 .steps__step-button-prev {
@@ -571,13 +570,8 @@ input::-webkit-inner-spin-button {
 
 .shops__card {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 37%;
-          flex: 0 1 37%;
   cursor: pointer;
   width: 100%;
-  max-width: 569px;
-  min-height: 280px;
   border-radius: 15px;
 }
 
@@ -643,22 +637,6 @@ input::-webkit-inner-spin-button {
   visibility: visible;
 }
 
-#one {
-  margin-bottom: 30px;
-}
-
-#two {
-  margin-bottom: 30px;
-}
-
-#four {
-  margin-bottom: 30px;
-}
-
-#five {
-  margin-bottom: 30px;
-}
-
 .shops__column1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,6 +664,67 @@ input::-webkit-inner-spin-button {
 
 .swiper-slide {
   width: 100%;
+}
+
+.shops__navigations-wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shops__step-button-next {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: url(../img/swiper/Vector.svg) no-repeat center center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #67aefc;
+  border-radius: 15px;
+}
+
+.shops__step-button-prev {
+  background: url(../img/swiper/Vector.svg) no-repeat center center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #67aefc;
+  border-radius: 15px;
+}
+
+.orders__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 214px 0 180px 0;
+}
+
+.orders__title {
+  margin-bottom: 53px;
+}
+
+.orders__text {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 140%;
+  color: #111111;
+  max-width: 670px;
+  margin-bottom: 45px;
+}
+
+.orders__btn {
+  width: 269px;
+  text-transform: uppercase;
+  padding: 23px 0 !important;
 }
 
 ._container {
@@ -1096,6 +1135,10 @@ body.__active {
     margin-right: 0;
   }
 
+  .steps__step-navifation-wrap {
+    margin-top: 25px;
+  }
+
   .steps__step-button-next {
     margin-left: 107px;
   }
@@ -1126,6 +1169,40 @@ body.__active {
 
   .shops__title {
     margin-bottom: 14px;
+  }
+
+  .shops__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 260px;
+            flex: 0 1 260px;
+    min-height: 260px;
+  }
+
+  #one {
+    margin-bottom: 14px;
+  }
+
+  #two {
+    margin-bottom: 14px;
+  }
+
+  #four {
+    margin-bottom: 14px;
+  }
+
+  #five {
+    margin-bottom: 14px;
+  }
+
+  .shops__navigations-wrap {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .shops__step-button-next {
+    margin-left: 107px;
   }
 
   .title {
@@ -1185,6 +1262,20 @@ body.__active {
 
   .steps__step {
     max-width: 335px !important;
+  }
+
+  .shops__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 400px;
+            flex: 0 1 400px;
+  }
+}
+
+@media (min-width: 600px) {
+  .shops__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 450px;
+            flex: 0 1 450px;
   }
 }
 
@@ -1299,6 +1390,39 @@ body.__active {
 
   .shops__title {
     margin-bottom: 51px;
+  }
+
+  .shops__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 37%;
+            flex: 0 1 37%;
+    max-width: 569px;
+    min-height: 280px;
+  }
+
+  #one {
+    margin-bottom: 30px;
+  }
+
+  #two {
+    margin-bottom: 30px;
+  }
+
+  #four {
+    margin-bottom: 30px;
+  }
+
+  #five {
+    margin-bottom: 30px;
+  }
+
+  .shops__navigations-wrap {
+    margin-top: 84px;
+    display: none;
+  }
+
+  .shops__step-button-next {
+    margin-left: 30px;
   }
 
   .menu-mobile.__active {
@@ -1440,6 +1564,8 @@ body.__active {
 @supports (-webkit-appearance:none){
 .steps__step-button-prev{background:url(../img/swiper/Vector.svg) no-repeat center center}
 .steps__step-button-next{background:url(../img/swiper/Vector.svg) no-repeat center center}
+.shops__step-button-next{background:url(../img/swiper/Vector.svg) no-repeat center center}
+.shops__step-button-prev{background:url(../img/swiper/Vector.svg) no-repeat center center}
 }
 
  @media (min-width: 320px){
@@ -1451,6 +1577,14 @@ body.__active {
 }
 
  @media (min-width: 425px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 600px){
 
 @supports (-webkit-appearance:none){
 

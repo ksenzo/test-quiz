@@ -25,7 +25,7 @@ openMenuBurger.addEventListener('click', () => menuBurger());
 
 
 for (let i = 0; i < downBtn.length; i++) {
-   downBtn[i].addEventListener("click", function() {
+   downBtn[i].addEventListener("click", function () {
       downBtn[i].classList.toggle("__active");
       addText[i].classList.toggle("__active");
       serviceStatus[i].classList.toggle("__active");
@@ -43,24 +43,27 @@ const swiper = new Swiper('.steps__slider', {
    },
 });
 
-let limitFunc = function(){
-   if (window.innerWidth < 768){
+let limitFunc = function () {
+   if (window.innerWidth < 768) {
       document.querySelector('.shops__swiper').classList.add('swiper');
       document.querySelector('.shops__cards').classList.add('swiper-wrapper');
       document.querySelector('.shops__column1').classList.add('swiper-slide');
       document.querySelector('.shops__column2').classList.add('swiper-slide');
       const swiperTwo = new Swiper('.shops__swiper', {
-         spaceBetween: 25,
          slidesPerView: 'auto',
+         navigation: {
+            nextEl: '.shops__step-button-next',
+            prevEl: '.shops__step-button-prev',
+         }
       });
-      
-   } else if (window.innerWidth > 768) {
+
+   } else if (window.innerWidth >= 768) {
       document.querySelector('.shops__swiper').classList.remove('swiper');
       document.querySelector('.shops__cards').classList.remove('swiper-wrapper');
       document.querySelector('.shops__column1').classList.remove('swiper-slide');
       document.querySelector('.shops__column2').classList.remove('swiper-slide');
    }
-   
+
 };
 
 
