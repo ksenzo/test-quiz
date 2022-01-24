@@ -33,12 +33,37 @@ for (let i = 0; i < downBtn.length; i++) {
 }
 
 
+
 const swiper = new Swiper('.steps__slider', {
    spaceBetween: 25,
    slidesPerView: 'auto',
-   centerSlide: true,
    navigation: {
       nextEl: '.steps__step-button-next',
       prevEl: '.steps__step-button-prev',
    },
 });
+
+let limitFunc = function(){
+   if (window.innerWidth < 768){
+      document.querySelector('.shops__swiper').classList.add('swiper');
+      document.querySelector('.shops__cards').classList.add('swiper-wrapper');
+      document.querySelector('.shops__column1').classList.add('swiper-slide');
+      document.querySelector('.shops__column2').classList.add('swiper-slide');
+      const swiperTwo = new Swiper('.shops__swiper', {
+         spaceBetween: 25,
+         slidesPerView: 'auto',
+      });
+      
+   } else if (window.innerWidth > 768) {
+      document.querySelector('.shops__swiper').classList.remove('swiper');
+      document.querySelector('.shops__cards').classList.remove('swiper-wrapper');
+      document.querySelector('.shops__column1').classList.remove('swiper-slide');
+      document.querySelector('.shops__column2').classList.remove('swiper-slide');
+   }
+   
+};
+
+
+window.addEventListener("resize", limitFunc);
+
+window.addEventListener("onload", limitFunc);
