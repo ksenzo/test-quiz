@@ -674,6 +674,41 @@ input::-webkit-inner-spin-button {
   max-width: 100%;
 }
 
+.img1 {
+  position: absolute;
+  width: 130px;
+  height: 190px;
+  left: 50px;
+  top: 250px;
+  z-index: 0;
+  -webkit-transform: rotate(-34.95deg);
+      -ms-transform: rotate(-34.95deg);
+          transform: rotate(-34.95deg);
+}
+
+.img1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.img2 {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  right: 10px;
+  bottom: 250px;
+  z-index: 0;
+}
+
+.img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.shops {
+  position: relative;
+}
+
 .shops__navigations-wrap {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -769,7 +804,67 @@ input::-webkit-inner-spin-button {
      object-fit: cover;
 }
 
+.img3 {
+  position: absolute;
+  width: 206px;
+  height: 268px;
+  left: 100px;
+  bottom: 300px;
+  z-index: 0;
+  -webkit-transform: rotate(-38.9deg);
+      -ms-transform: rotate(-38.9deg);
+          transform: rotate(-38.9deg);
+}
+
+.img3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.img4 {
+  position: absolute;
+  width: 184px;
+  height: 144px;
+  right: 100px;
+  top: 300px;
+  z-index: 0;
+}
+
+.img4 img {
+  width: 100%;
+  height: 100%;
+}
+
+.img5 {
+  position: absolute;
+  width: 285px;
+  height: 291px;
+  left: 11%;
+  bottom: 35px;
+  z-index: 0;
+}
+
+.img5 img {
+  width: 100%;
+  height: 100%;
+}
+
+.img6 {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  left: 100px;
+  top: 100px;
+  z-index: 0;
+}
+
+.img6 img {
+  width: 100%;
+  height: 100%;
+}
+
 .project {
+  position: relative;
   background: #daecff;
 }
 
@@ -800,7 +895,12 @@ input::-webkit-inner-spin-button {
           align-items: center;
 }
 
+.project__title {
+  z-index: 2;
+}
+
 .project__subtitle {
+  z-index: 2;
   font-family: "Montserrat";
   line-height: 175%;
   text-align: center;
@@ -808,6 +908,7 @@ input::-webkit-inner-spin-button {
 }
 
 .project__form {
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1462,6 +1563,14 @@ body.__active {
     width: 100%;
   }
 
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: none;
+  }
+
   .shops__navigations-wrap {
     margin-top: 25px;
     display: -webkit-box;
@@ -1497,8 +1606,24 @@ body.__active {
     display: none;
   }
 
+  .img3 {
+    display: none;
+  }
+
+  .img4 {
+    display: none;
+  }
+
+  .img5 {
+    display: block;
+  }
+
+  .img6 {
+    display: none;
+  }
+
   .project__body {
-    padding: 42px 0 25px 0;
+    padding: 42px 0 358px 0;
   }
 
   .project__title {
@@ -1824,6 +1949,14 @@ body.__active {
     max-width: 563px;
   }
 
+  .img1 {
+    display: block;
+  }
+
+  .img2 {
+    display: block;
+  }
+
   .shops__navigations-wrap {
     margin-top: 84px;
     display: none;
@@ -1852,6 +1985,22 @@ body.__active {
     -ms-flex-negative: 1;
         flex-shrink: 1;
     overflow: visible;
+  }
+
+  .img3 {
+    display: block;
+  }
+
+  .img4 {
+    display: block;
+  }
+
+  .img5 {
+    display: none;
+  }
+
+  .img6 {
+    display: block;
   }
 
   .project__body {
