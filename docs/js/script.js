@@ -51,3 +51,76 @@ const swiperTwo = new Swiper('.shops__swiper', {
       prevEl: '.shops__step-button-prev',
    },
 });
+
+
+document.addEventListener('DOMContentLoaded' , function () {
+   const form = document.getElementById('form');
+   const erorrText = document.query
+   form.addEventListener('submit', formSend);
+
+   async function formSend(e) {
+      e.preventDefault();
+      let erorr = formValidate(form);
+
+      if (erorr === 0) {
+         //отправка формы
+      } else {
+         alert('введите email в формате ____@.com/net/ua/ru, введите номер телефона в формате своей страны!');
+      }
+
+      function formValidate(form) {
+         let erorr = 0;
+         let formReq = document.querySelectorAll('._req');
+
+         for (let i = 0; i < formReq.length; i++) {
+            const input = formReq[i];
+            formRemoveErorr(input);
+
+            if (input.classList.contains('__email')) {
+               if (emailTest(input)) {
+                  formAddErorr(input);
+                  erorr++;
+               }
+            } else {
+               if (input.value === '') {
+                  formAddErorr(input);
+                  erorr++;
+               }
+            }
+
+            if (input.classList.contains('__phone')) {
+               if (phonetest(input)) {
+                  formAddErorr(input);
+                  erorr++;
+               }
+            } else {
+               if (input.value === '') {
+                  formAddErorr(input);
+                  erorr++;
+               }
+            }
+         }
+         return erorr;
+      }
+
+      function formAddErorr(input) {
+         input.parentElement.classList.add('__erorr');
+         input.classList.add('__erorr');
+         
+      }
+      function formRemoveErorr(input) {
+         input.parentElement.classList.remove('__erorr');
+         input.classList.remove('__erorr');
+      }
+
+      function emailTest(input) {
+         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+      }
+
+      function phonetest(input) {
+         return /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/.test(input.value);
+      }
+   }
+});
+
+
